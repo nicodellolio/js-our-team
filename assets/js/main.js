@@ -32,3 +32,16 @@ const team = [
       image: 'barbara-ramos-graphic-designer.jpg',
     },
   ];
+
+//milestone 1: stampiamo le informazioni relative ad ogni membro in console
+//iniziamo utilizzando un ciclo for
+for (let i = 0; i < team.length; i++) {
+    const teamMember = team[i];
+    // console.log(teamMember);
+
+    //che a sua volta conterrà un ciclo in
+    for (const key in teamMember) {
+        console.log(teamMember[key]);
+    }
+}
+
