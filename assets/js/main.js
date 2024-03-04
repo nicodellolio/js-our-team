@@ -41,11 +41,10 @@ const rowElement = document.querySelector('.row')
 //iniziamo utilizzando un ciclo for
 for (let i = 0; i < team.length; i++) {
     const teamMember = team[i];
-    // console.log(teamMember);
+    console.log(teamMember.name + ` - ` + teamMember.role + ` - ` + teamMember.image);
 
     //creiamo un markup da inserire nel DOM
-    const markup = `<div class="col"><div class="card p-2"><h3>${teamMember.name}</h3><aside>${teamMember.role}</div></div>`
-    console.log(markup);
+    const markup = `<div class="col"><div class="card mb-5 border-0"><img class= "w-100" src="${teamMember.image}"><h3 class= "fw-bold px-3 pt-3 text-center">${teamMember.name}</h3><aside class= "px-2 pb-3 text-center">${teamMember.role}</div></div>`
     rowElement.insertAdjacentHTML('beforeend', markup)
 }
 
